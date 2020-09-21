@@ -79,6 +79,7 @@
  </div>
 </section>
 
+
 <section class="ftco-section">
  <div class="container">
   <div class="row justify-content-center pb-5 mb-3">
@@ -91,7 +92,7 @@
    <div class="col-md-6 col-lg-3">
     <div class="volunteer">
      <div class="img" style="background-image: url(images/Akarsh.png);"></div>
-     <div class="text text-1">
+     <div style="background-color:#527FA0; width:85%"class="text text-2">
       <h3>Akarsh Banthiya</h3>
       <span>Volunteer</span>
     </div>
@@ -100,7 +101,7 @@
 <div class="col-md-6 col-lg-3">
   <div class="volunteer">
    <div class="img" style="background-image: url(images/team-2.jpeg);"></div>
-   <div class="text text-2">
+   <div class="text text-4" style="width:85%">
     <h3>Priyanshu Adhikari</h3>
     <span>Volunteer</span>
   </div>
@@ -109,7 +110,7 @@
 <div class="col-md-6 col-lg-3">
   <div class="volunteer">
    <div class="img" style="background-image: url(images/team3.jpeg);"></div>
-   <div class="text text-3">
+   <div class="text text-2" style="width:85%">
     <h3>Vanshika Nehra</h3>
     <span>Volunteer</span>
   </div>
@@ -118,7 +119,7 @@
 <div class="col-md-6 col-lg-3">
   <div class="volunteer">
    <div class="img" style="background-image: url(images/team-1.jpg);"></div>
-   <div class="text text-4">
+   <div class="text text-4" style="background-color:#EC732F;width:85%">
     <h3>Sarang Sharma</h3>
     <span>Volunteer</span>
   </div>
@@ -128,7 +129,7 @@
 <div class="col-md-6 col-lg-3">
   <div class="volunteer">
    <div class="img" style="background-image: url(images/team5.jpeg);"></div>
-   <div class="text text-4">
+   <div class="text text-4" style="background-color:#24807e; width:85%">
     <h3>Simran Bafna</h3>
     <span>Volunteer</span>
   </div>
@@ -137,21 +138,83 @@
 </div>
 </div>
 </section>
-<!--
-<section class="ftco-hireme bg-secondary">
- <div class="container">
-  <div class="row justify-content-between">
-   <div class="col-md-8 col-lg-8 d-flex align-items-center">
-    <div class="w-100">
-     <h2>Best Way to Make a Difference in the Lives of Others</h2>
-   </div>
- </div>
- <div class="col-md-4 col-lg-4 d-flex align-items-center justify-content-end">
-  <p class="mb-0"><a href="#" class="btn btn-primary py-3 px-4">Become A Volunteer</a></p>
+
+<!-- Volunteer Form -->
+
+<div class="row no-gutters" style="justify-content: center; margin:auto">
+  <div class="col-md-7">
+    <div class="contact-wrap w-100 p-md-5 p-4" style="background-color:#bea87f; margin:auto;">
+      <h3 class="mb-4">Volunteer Form</h3>
+      <hr>
+      <form method="POST" id="volunteerForm" name="volunteerForm" class="volunteerForm" action="volunteerform.php">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label style="color:white" class="label" for="firstname"><b>First Name</b> <span style="color:red">*</span></label>
+              <input type="text" class="form-control" name="fname" id="lname" placeholder="First Name" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label style="color:white" class="label" for="lastname"><b>Last Name</b> <span style="color:red">*</span></label>
+              <input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label style="color:white" class="label" for="email"><b>Email Address</b> <span style="color:red">*</span></label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="your_email@something.com" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label style="color:white" class="label" for="phone"><b> Phone Number </b> <span style="color:red">*</span></label>
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number" required>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label style="color:white" class="label" for="name"><b>Address</b> <span style="color:red">*</span></label>
+              <input type="text" class="form-control" name="address" id="address" placeholder="Address" required>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label style="color:white" class="label" for="name"><b>City/Country</b> <span style="color:red">*</span></label>
+              <input type="text" class="form-control" name="city" id="city" placeholder="City and Country" required>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label style="color:white" class="label" for="name"><b>Qualification/Occupation</b> <span style="color:red">*</span></label>
+              <input type="text" class="form-control" name="qualification" id="qualification" placeholder="Qualification/Occupation" required>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label style="color:white" class="label" for="volunteeringfor"> <b>Volunteering For</b></label>
+              <input type="text" class="form-control" name="volunteeringfor" id="volunteeringfor" placeholder="Volunteering For ?">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label style="color:white" class="label" for="#"><b>Message</b></label>
+              <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Any message for us?"></textarea>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="submit" name="sendmail" value="Submit Form" data-submit="...sending your application!" class="btn btn-primary">
+              <div class="submitting"></div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</section> -->
+<!-- End -->
+
 
 
 <footer class="footer">
@@ -175,12 +238,7 @@
         <div style="color:#AFB1AC">The foundation of Janak Sewa Samiti was laid in 1975. Ever since the samiti has been able to offer its humble <b>'Ahuti'</b> in this <b>'yajna'</b></div>
         </div>
       </div>
-    <!-- <div class="block-21 mb-4 d-flex">
-      <a class="img mr-4 rounded" style="background-image: url(images/image_2.jpg);"></a>
-      <div class="text">
-        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-      </div>
-    </div> -->
+
   </div>
   <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
     <h2 class="footer-heading">Quick Links</h2>
@@ -215,8 +273,6 @@
   </div>
 </div>
 </footer>
-
-
 
 
 
