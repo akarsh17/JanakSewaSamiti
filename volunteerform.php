@@ -106,13 +106,17 @@ if (empty($_POST["email"])) {
     }
 if (file_exists($template_file))
     $email_body = file_get_contents($template_file);
-else
-    die("Unable to locate the template file");
+else {
+  die() ;
+  echo '<script>alert("Uhhoo, Some error occured.\\nPlease resend the message.")</script>';
+}
 
 if (file_exists($template_file_REPLY))
     $reply_body = file_get_contents($template_file_REPLY);
-else
-    die("Unable to locate the template file");
+else {
+  die() ;
+  echo '<script>alert("Uhhoo, Some error occured.\\nPlease resend the message.")</script>';
+}
 
     // create a list of the variables to be swapped in the html template
     $swap_var = array(
