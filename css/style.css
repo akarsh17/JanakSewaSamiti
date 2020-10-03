@@ -46,12 +46,7 @@
 }
 
 /* editied by Akarsh Banthiya */
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} */
-
+.error {color: #FF0000;}
 
 .gallery-image {
   padding: 20px;
